@@ -1,0 +1,84 @@
+/* navbar.css */
+
+.navbar-primary {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada para mayor profundidad */
+    padding: 0.75rem 1rem; /* Espaciado interno ligeramente mayor */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fuente moderna y limpia */
+}
+
+.navbar-primary .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-primary .nav-item {
+    margin: 0 1rem; /* Espaciado mayor entre elementos para mejor legibilidad */
+}
+
+.navbar-primary .nav-link {
+    color: #555; /* Color de texto más suave */
+    font-weight: 600; /* Peso de la fuente más pronunciado */
+    transition: all 0.3s ease; /* Transición suave para todas las propiedades */
+    border-bottom: 3px solid transparent; /* Preparación para efecto de subrayado */
+    padding-bottom: 0.25rem; /* Espaciado para no afectar la alineación al añadir subrayado */
+    text-decoration: none; /* Eliminar el subrayado del texto */
+}
+
+/* Estilo para el enlace activo en el navbar */
+.navbar-primary .nav-link.active {
+    color: dodgerblue; /* Color del texto para el enlace activo */
+    border-bottom: 3px solid dodgerblue; /* Raya debajo del enlace activo */
+}
+
+.navbar-primary .nav-link:hover {
+    color: dodgerblue; /* Color más oscuro al pasar el ratón */
+    /* No se necesita 'border-bottom-color' aquí si el 'hover' no debe cambiar el subrayado */
+}
+
+.navbar-primary .nav-link i {
+    margin-right: 0.5rem; /* Espaciado mayor entre el icono y el texto */
+}
+
+#toggleTheme {
+    /* Estilos específicos para el botón de cambio de modo */
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar-nav .fa {
+    /* Ajustes para el tamaño y espaciado de todos los íconos Font Awesome dentro del navbar */
+    font-size: 1rem; /* Ajusta este valor para que coincida con el tamaño de tus otros íconos */
+}
+
+.navbar-nav.ml-auto {
+    /* Utiliza márgenes automáticos para empujar el contenido hacia la derecha */
+    margin-left: auto;
+}
+
+/* Asegúrate de que el ícono del tema tenga el mismo tamaño que los otros íconos */
+#themeIcon {
+    font-size: inherit; /* Hereda el tamaño de la fuente del padre */
+}
+
+/* Estilos para dispositivos móviles y menús desplegables */
+@media (max-width: 992px) {
+    .navbar-primary .navbar-nav {
+        flex-direction: column;
+        padding-top: 0.5rem; /* Espaciado superior para los enlaces en móviles */
+    }
+
+    .navbar-primary .nav-item {
+        width: 100%;
+        margin: 0.5rem 0; /* Espaciado mayor para una mejor interacción táctil */
+    }
+
+    .navbar-primary .nav-link {
+        text-align: center; /* Alineación central para los enlaces en móviles */
+        border-bottom: 2px solid transparent; /* Subrayado más delgado para dispositivos móviles */
+    }
+}
+
+

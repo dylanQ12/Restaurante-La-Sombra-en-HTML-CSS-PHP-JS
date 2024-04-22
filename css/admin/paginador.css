@@ -1,0 +1,33 @@
+.paginador .pagination {
+    display: flex;
+    list-style: none; /* Elimina los estilos de lista por defecto */
+    padding: 0; /* Quita el padding predeterminado */
+    justify-content: center; /* Centra los elementos del paginador */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.paginador .page-item {
+    margin: 0 5px; /* Espaciado entre los elementos del paginador */
+}
+
+.paginador .page-link {
+    color: #007bff; /* Color del texto para los enlaces */
+    background-color: #fff; /* Fondo blanco para los enlaces */
+    border: 1px solid #dee2e6; /* Borde sutil */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transición suave para los efectos de hover */
+}
+
+.paginador .page-item.active .page-link {
+    color: #fff; /* Color del texto para el elemento activo */
+    background-color: #007bff; /* Color de fondo para el elemento activo */
+    border-color: #007bff; /* Color del borde para el elemento activo */
+}
+
+.paginador .page-link:hover {
+    color: #fff; /* Color del texto al pasar el ratón */
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    border-color: #0056b3; /* Color del borde al pasar el ratón */
+}

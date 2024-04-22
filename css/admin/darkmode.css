@@ -1,0 +1,50 @@
+/* Establece las variables para el modo claro como valores por defecto */
+:root {
+    --color-fondo: #FFFFFF;
+    --color-texto: #212529;
+    --color-nav-bg: #F8F9FA;
+    --color-nav-texto: #555555;
+    --color-nav-hover: #000000;
+    --color-boton-bg: #28A745;
+    --color-boton-texto: #FFFFFF;
+    --color-header-bg: #007BFF;
+    --color-header-texto: #FFFFFF;
+    --color-tabla-linea: #DEE2E6;
+    --color-tabla-cabecera-bg: #007BFF;
+    --color-tabla-cabecera-texto: #FFFFFF;
+    --color-tabla-fila-zebra: #F2F2F2;
+    --color-enlace: #007BFF;
+    --color-enlace-hover: #0056B3;
+    --color-paginador-bg: #FFFFFF;
+    --color-paginador-texto: #007BFF;
+    --color-paginador-activo-bg: #007BFF;
+    --color-paginador-activo-texto: #FFFFFF;
+    --color-boton-eliminar-bg: #DC3545;
+    --color-input-borde: #CED4DA;
+  }
+  
+  /* Modo oscuro: Sobrescribe las variables */
+  .dark-mode {
+    --color-fondo: #121212;
+    --color-texto: #E4E6EB;
+    --color-nav-bg: #343A40;
+    --color-nav-texto: #CCCCCC;
+    --color-nav-hover: #FFFFFF;
+    --color-boton-bg: #343A40;
+    --color-boton-texto: #FFFFFF;
+    --color-header-bg: #212529;
+    --color-header-texto: #E4E6EB;
+    --color-tabla-linea: #343A40;
+    --color-tabla-cabecera-bg: #212529;
+    --color-tabla-cabecera-texto: #E4E6EB;
+    --color-tabla-fila-zebra: #2C2F33;
+    --color-enlace: #BB86FC;
+    --color-enlace-hover: #3700B3;
+    --color-paginador-bg: #424242;
+    --color-paginador-texto: #BB86FC;
+    --color-paginador-activo-bg: #BB86FC;
+    --color-paginador-activo-texto: #000000;
+    --color-boton-eliminar-bg: #CF6679;
+    --color-input-borde: #424242;
+  }
+  

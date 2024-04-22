@@ -1,0 +1,74 @@
+/* Estilos Base de la Tabla */
+.tabla {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-collapse: separate; /* Espaciado entre celdas */
+    border-spacing: 0; /* Sin espacio entre celdas */
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para profundidad */
+}
+
+/* Estilos de Cabecera y Celdas */
+.tabla th, .tabla td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #dee2e6; /* Borde solo en la parte inferior */
+}
+
+/* Estilos del Encabezado de la Tabla */
+.tabla thead {
+    background-color: #e9ecef; /* Color de fondo suave */
+    color: #495057; /* Color de texto oscuro */
+    letter-spacing: 0.5px; /* Espaciado de letras */
+}
+
+/* Alternar Colores de Fondo de las Filas */
+.tabla tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tabla tbody tr:hover {
+    background-color: #ddd; /* Efecto hover suave */
+}
+
+/* Estilos de Botones */
+.tabla .btn {
+    margin: 2px;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s;
+    border: none; /* Sin borde */
+}
+
+.tabla .btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.tabla .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.tabla .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.tabla .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .tabla th, .tabla td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+

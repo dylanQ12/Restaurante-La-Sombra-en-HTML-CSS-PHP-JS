@@ -1,0 +1,340 @@
+/* Variables CSS para un mejor mantenimiento y coherencia */
+:root {
+    color-scheme: light dark;
+    --primary-color: #007bff;
+    --hover-color: #f8f9fa;
+    --font-size-brand: 1.5rem;
+    --transition-speed: 0.3s;
+    --navbar-background-color: #333;
+    --banner-background-color: rgba(0, 0, 0, 0.6);
+    --footer-background-color: #202020;
+    --navbar-background-color: transparent;
+    --navbar-text-color: #fff;
+    --primary-color: #007bff; /* Color principal del tema */
+    --hover-color: #ffffff; /* Color al pasar el ratón por encima de los enlaces */
+    --font-size-brand: 1.5rem; /* Tamaño de la fuente para la marca del navbar */
+    --transition-speed: 0.5s; /* Velocidad de la transición para efectos de hover */
+    --navbar-text-color: #ffffff; /* Color del texto para una mejor legibilidad */
+    --navbar-hover-background-color: rgba(255, 255, 255, 0.1);
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-shadow-hover: rgba(0, 0, 0, 0.2);
+    --transition-speed: 0.3s;
+    --primary-color: #007bff; /* Ajusta a tu color primario */
+    --background-testimonial: #f8f9fa;
+    --color-footer-testimonial: #6c757d;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-hover-color: rgba(0, 0, 0, 0.2);
+    --transition-speed: 0.3s;
+    --text-color: #333; /* Un color más suave para el texto */
+    --font-weight-bold: 600; /* Peso de la fuente para títulos */
+    --menu-background-color: #fff; /* Color de fondo para las tarjetas del menú */
+    --menu-border-radius: 10px;
+    --background-section: #f8f9fa;
+    --text-color: #333;
+    --primary-color: #007bff; /* Ajusta al color primario de tu sitio */
+    --border-radius: 0.3rem; /* Radio de borde suavizado */
+    --padding-section: 2rem 0;
+    --margin-title: 1rem;
+    --margin-subtitle: 0.5rem;
+    --font-icon-size: 2rem;
+    --button-padding: 0.6rem 1.8rem;
+    --transition-speed: 0.3s;
+    --footer-background-color: #343a40; /* Un color oscuro para el fondo */
+    --footer-text-color: #dcdcdc; /* Un color claro para el texto */
+    --footer-icon-size: 1.8rem; /* Tamaño más grande para los íconos sociales */
+    --footer-icon-spacing: 0.8rem; /* Espaciado alrededor de los íconos */
+    --footer-hover-brightness: 1.2; /* Aumento de brillo al pasar el ratón sobre los íconos */
+    --footer-padding: 2rem 0;
+}
+
+
+/* Sección de la barra de navegación */
+.navbar {
+    background-color: transparent; 
+    padding: 1rem 2rem; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-brand {
+    color: var(--navbar-text-color); 
+    font-size: var(--font-size-brand);
+    transition: transform var(--transition-speed) ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05); 
+}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text-color); 
+    transition: color var(--transition-speed) ease, background-color var(--transition-speed) ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--hover-color); 
+    background-color: var(--navbar-hover-background-color); 
+    border-radius: 5px; 
+}
+
+
+@media (max-width: 992px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+}
+
+
+/* Sección del Banner */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px; 
+    padding: 2rem; 
+    margin-bottom: 4rem; 
+    max-width: 800px; 
+    left: 50%; 
+    right: auto; 
+    transform: translateX(-50%); 
+    bottom: 10%; 
+    text-align: center; 
+    transition: background-color var(--transition-speed) ease; 
+}
+
+.carousel-caption h1 {
+    font-size: 3rem; 
+    font-weight: bold; 
+    color: #fff; 
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); 
+    transition: transform var(--transition-speed) ease; 
+}
+
+.carousel-caption h1:hover {
+    transform: scale(1.05); 
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.carousel-caption .btn {
+    background-color: var(--primary-color); 
+    color: #fff; 
+    padding: 1rem 2rem; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease; 
+}
+
+.carousel-caption .btn:hover {
+    background-color: darken(var(--primary-color), 10%); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); 
+}
+
+
+
+/* Sección de Chefs */
+.chef-card {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    border-radius: 10px; /* Agrega un border-radius para un look más moderno */
+    overflow: hidden; /* Para que los hijos no sobresalgan del border-radius */
+}
+
+.chef-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px var(--color-shadow-hover);
+}
+
+.social-icons a {
+    color: inherit;
+    transition: color var(--transition-speed) ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Sección de Testimonios */
+.testimonial-card {
+    background-color: var(--background-testimonial);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-style: italic;
+}
+
+.testimonial-card .blockquote-footer {
+    font-size: 0.9em;
+    color: var(--color-footer-testimonial);
+}
+
+@media (max-width: 768px) {
+    /* Ajustes responsivos para pantallas más pequeñas */
+    .chef-card,
+    .testimonial-card {
+        margin: 10px 0; /* Ajusta el margen en dispositivos móviles */
+    }
+}
+
+
+/* Sección del menú de comidas */
+.menu-card {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    background-color: var(--menu-background-color);
+    border-radius: var(--menu-border-radius);
+    overflow: hidden; 
+    cursor: pointer; 
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px var(--shadow-hover-color);
+}
+
+.card-title {
+    color: var(--text-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.card-text small {
+    display: block;
+    margin-top: 10px;
+    color: var(--text-color); 
+}
+
+@media (max-width: 768px) {
+    .menu-card {
+        margin: 10px 0;
+        transform: none; 
+    }
+
+    .menu-card:hover {
+        box-shadow: var(--shadow-color);
+    }
+}
+
+
+/* Sección formulario de contacto */
+#contacto {
+    background-color: var(--background-section);
+    padding: var(--padding-section);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra ligera */
+}
+
+#contacto h2 {
+    margin-bottom: var(--margin-title);
+}
+
+#contacto p {
+    margin-bottom: var(--margin-title);
+    color: var(--text-color); /* Mejora la legibilidad */
+}
+
+#contacto .form-control {
+    border-radius: var(--border-radius);
+    border: 1px solid #ced4da; /* Borde más definido */
+    transition: border-color var(--transition-speed) ease-in-out; /* Transición suave en el foco */
+}
+
+#contacto .form-control:focus {
+    border-color: var(--primary-color); /* Resalta el control activo */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Sombras sutiles al enfocar */
+}
+
+#contacto .btn-primary {
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color var(--transition-speed) ease-in-out; /* Transición suave en el botón */
+}
+
+#contacto .btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%); /* Oscurecer al pasar el ratón */
+}
+
+
+
+/* Sección horarios */
+#horarios {
+    background-color: var(--background-section);
+    color: var(--text-color);
+    padding: var(--padding-section);
+}
+
+#horarios h3 {
+    margin-bottom: var(--margin-title);
+}
+
+#horarios h5 {
+    margin-bottom: var(--margin-subtitle);
+}
+
+#horarios .fas {
+    font-size: var(--font-icon-size);
+    color: var(--primary-color);
+}
+
+.fa-spin {
+    animation: spin 3s linear infinite;
+}
+
+
+
+/* Sección footer (pie de página) */
+#site-footer {
+    background-color: var(--footer-background-color);
+    padding: var(--footer-padding);
+    text-align: center; /* Alineación central para un aspecto moderno */
+}
+
+#site-footer p {
+    color: var(--footer-text-color);
+    margin-bottom: 1rem; /* Más espacio debajo del texto */
+}
+
+#site-footer .social-icons {
+    display: inline-block; /* Alineación de íconos */
+    margin-bottom: 1rem; /* Espacio debajo de los íconos */
+}
+
+#site-footer .social-icons a {
+    font-size: var(--footer-icon-size);
+    margin: 0 var(--footer-icon-spacing);
+    color: var(--footer-text-color); /* Color uniforme para los íconos */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave al interactuar */
+}
+
+#site-footer .social-icons a:hover {
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el ratón */
+    filter: brightness(var(--footer-hover-brightness)); /* Brillo al pasar el ratón */
+}
+
+/* Colores específicos de las redes sociales */
+#site-footer .social-icons a.facebook {
+    --social-color: #007bff;
+}
+
+#site-footer .social-icons a.twitter {
+    --social-color: #00acee;
+}
+
+#site-footer .social-icons a.instagram {
+    --social-color: #e1306c;
+}
+
+#site-footer .social-icons a:hover {
+    color: var(--social-color); /* Color específico al pasar el ratón */
+}
+

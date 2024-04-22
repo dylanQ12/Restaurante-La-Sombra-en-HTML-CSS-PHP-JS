@@ -1,0 +1,40 @@
+.boton {
+    background-color: #28a745; /* Color de fondo (verde de Bootstrap 'success') */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Hace que se comporte como un botón */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para hover */
+}
+
+.boton:hover {
+    background-color: #218838; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Color del texto al pasar el ratón */
+}
+
+.boton .fa-regular {
+    margin-right: 5px; /* Margen a la derecha del icono */
+}
+
+.boton-guardar {
+    background-color: #007bff; /* Color de fondo (azul de Bootstrap 'primary') */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Elimina el borde */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+.boton-guardar:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Color del texto al pasar el ratón */
+}
+
+.boton-guardar .fa-solid {
+    margin-right: 5px; /* Margen a la derecha del icono */
+}
+

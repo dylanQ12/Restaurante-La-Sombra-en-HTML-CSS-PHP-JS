@@ -1,0 +1,40 @@
+.alertas .alert {
+    position: fixed; /* Hace que la alerta sea fija en la pantalla */
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Espacio desde la parte derecha */
+    width: auto; /* El ancho se ajustará al contenido */
+    z-index: 9999; /* Asegura que la alerta se muestre por encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidad */
+    border-left: 5px solid; /* Borde lateral para destacar */
+}
+
+.alertas .alert-success {
+    border-color: #28a745; /* Color del borde para éxito */
+}
+
+.alertas .alert-dismissible .btn-close {
+    color: #fff; /* Color del botón de cierre */
+    opacity: 1; /* Hace que el botón de cierre sea totalmente opaco */
+}
+
+/* Animación para mostrar la alerta */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.alertas .alert {
+    animation: slideInRight 0.5s ease-out; /* Aplica la animación */
+}
+
+/* Estilos para hacer que el texto de la alerta sea más legible y moderno */
+.alertas .alert {
+    font-size: 1rem;
+    line-height: 1.5;
+}

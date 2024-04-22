@@ -1,0 +1,44 @@
+.formulario .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.formulario .card-header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    font-size: 1.2rem; /* Tamaño del texto del encabezado */
+    border-top-left-radius: 10px; /* Redondear esquinas superiores */
+    border-top-right-radius: 10px;
+}
+
+.formulario .card-body {
+    padding: 20px; /* Espaciado interno */
+}
+
+.formulario .form-label {
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #333; /* Color de las etiquetas */
+}
+
+.formulario .form-control {
+    border-radius: 5px; /* Bordes redondeados para los campos */
+    border: 1px solid #ced4da; /* Borde sutil */
+    padding: 10px; /* Espaciado interno */
+}
+
+.formulario input[type="file"] {
+    background-color: #fff; /* Fondo blanco para el campo de archivo */
+}
+
+/* Estilos para el contenedor de la fila */
+.row.mb-4 {
+    margin-bottom: 1.5rem; /* Espaciado adicional debajo de la fila */
+}
+
+/* Estilos para la columna y la alineación del contenedor de búsqueda */
+.col.d-flex.justify-content-end {
+    display: flex;
+    justify-content: flex-end; /* Alinea el campo de búsqueda hacia la derecha */
+    padding-right: 15px; /* Espaciado a la derecha para evitar que se pegue al borde */
+}

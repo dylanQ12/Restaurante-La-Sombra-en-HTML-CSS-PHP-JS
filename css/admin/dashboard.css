@@ -1,0 +1,48 @@
+.full-height-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: #e9ecef; /* Un fondo neutro */
+}
+
+.full-height-section .h-100 {
+    max-width: 400px; /* Ajusta el ancho máximo del contenedor */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.full-height-section h2 {
+    font-size: 2rem; /* Tamaño más grande para el título */
+    color: #495057; /* Un color más oscuro para el texto */
+    margin-bottom: 0.5rem;
+}
+
+.full-height-section p {
+    font-size: 1rem;
+    color: #6c757d; /* Un gris para el párrafo */
+    margin-bottom: 1.5rem;
+}
+
+.full-height-section .btn {
+    font-size: 1rem;
+    font-weight: 500; /* Peso de fuente medio */
+    color: #fff; /* Texto blanco para que resalte */
+    background-color: #007bff; /* Color de fondo del botón primario */
+    border: none; /* Elimina el borde */
+    padding: 0.75rem 2rem; /* Espaciado más grande para el botón */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    transition: all 0.2s ease-in-out; /* Transición suave */
+}
+
+.full-height-section .btn:hover {
+    background-color: #0056b3; /* Un azul más oscuro al pasar el ratón */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra exterior para resaltar */
+}
+
+
+
